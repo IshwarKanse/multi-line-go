@@ -6,4 +6,4 @@ RUN go mod init multi-line-go && \
 
 FROM registry.access.redhat.com/ubi8/ubi-micro
 COPY --from=0 /opt/app-root/src/multi-line-go .
-CMD ./my_app
+CMD ./multi-line-go
